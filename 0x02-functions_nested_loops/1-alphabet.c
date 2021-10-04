@@ -13,16 +13,16 @@
 /**
  * print_alphabet - prints the alphabet in lowercase, followed by a new line.
  */
-int main (void)
+int main(void)
 {
 void print_alphabet(void)
 {
-  char letter;
+char letter;
 
-  for (letter = 'a'; letter <= 'z'; letter++)
-    _putchar(letter);
+for (letter = 'a'; letter <= 'z'; letter++)
+_putchar(letter);
 
-  _putchar('\n');
+_putchar('\n');
 }
- return (0);
+return (0);
 }
