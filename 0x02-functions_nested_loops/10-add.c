@@ -1,18 +1,9 @@
 /*
  * File: 10-add.c
- * Auth: Brennan D Baraban
+ * Auth: Imanol Asolo
  */
 
 #include "main.h"
-#include <stdio.h>
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
 
 /**
  * add - Adds two integers.
@@ -24,5 +15,4 @@ int main(void)
 int add(int num1, int num2)
 {
 return (num1 + num2);
-}
 }
