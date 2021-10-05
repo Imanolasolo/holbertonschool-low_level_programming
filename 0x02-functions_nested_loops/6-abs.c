@@ -7,15 +7,6 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-
-
-/**
  * _abs - Computes the absolute value of an integer.
  * @n: The integer to be computed.
  *
@@ -28,4 +19,4 @@ return (n);
 else
 return (-n);
 }
-}
+
