@@ -1,13 +1,16 @@
+/*
+ * File: 4-isalpha.c
+ * Author: Imanol Asolo
+ */
 
 #include "main.h"
 
 /**
- * main - check the code.
+ * _isalpha - Checks if a character is alphabetic.
+ * @c: The character to be checked.
  *
- * Return: Always 0.
+ * Return: 1 if character is letter, lowercase or uppercase, 0 otherwise.
  */
-int main(void)
-{
 
 int _isalpha(int c)
 {
@@ -16,4 +19,4 @@ return (1);
 else
 return (0);
 }
-}
+
