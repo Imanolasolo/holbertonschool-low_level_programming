@@ -8,7 +8,7 @@
 
 /**
  * main - Prints the alphabet, in lowercase, followed by a new line.
- *
+ * print_alphabet
  * Return: Always 0.
  */
 
