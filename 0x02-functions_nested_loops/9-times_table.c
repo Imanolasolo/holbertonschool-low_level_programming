@@ -6,14 +6,6 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-
-/**
  * times_table - Prints the 9 times table, starting with 0.
  */
 void times_table(void)
@@ -39,6 +31,5 @@ _putchar((prod / 10) + '0');
 _putchar((prod % 10) + '0');
 }
 _putchar('\n');
-}
 }
 }
