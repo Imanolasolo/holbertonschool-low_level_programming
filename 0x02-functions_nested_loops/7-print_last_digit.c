@@ -6,14 +6,6 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-
-/**
  * print_last_digit - Prints the last digit of a number.
  * @n: The number in question.
  *
@@ -30,4 +22,4 @@ _putchar(last_digit + '0');
 
 return (last_digit);
 }
-}
+
