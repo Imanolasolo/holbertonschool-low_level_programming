@@ -1,4 +1,5 @@
-/* File: 2-mul.c
+/*
+ * File: 2-mul.c
  * Author: Imanol Asolo
  */
 #include "main.h"
