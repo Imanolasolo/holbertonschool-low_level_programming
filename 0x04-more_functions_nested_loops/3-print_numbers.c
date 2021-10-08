@@ -1,4 +1,5 @@
-/* File: 3-print_numbers.c
+/*
+ * File: 3-print_numbers.c
  * Author: Imanol Asolo
  */
 #include "main.h"
