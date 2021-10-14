@@ -1,7 +1,3 @@
-/*
- * File: 4-rev_array.c
- * Auth: Imanol Asolo
- */
 #include "main.h"
 
 /**
