@@ -1,4 +1,7 @@
 0x12. C - Singly linked lists
+
+Author: Imanol Asolo
+
 About
 
 An introductory project on:
@@ -15,6 +18,8 @@ gcc 4.8.4
 
 File Descriptions
 
+Mandatory
+
 lists.h - header file containing the definition of list_t and the prototypes of all functions.
 
 0-print_list.c - function that prints all the elements of a list_t list.
@@ -28,5 +33,6 @@ lists.h - header file containing the definition of list_t and the prototypes of 
 4-free_list.c - function that frees a list_t list.
 
 Advanced
+
 100-first.c - function that executes before the main function.
 
