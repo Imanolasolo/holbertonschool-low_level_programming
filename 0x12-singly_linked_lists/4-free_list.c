@@ -6,7 +6,7 @@
  * @head: A pointer to the list_t list.
  */
 void free_list(list_t *head)
-{
+{/* Initialize variables and traverse and free the list*/
 	list_t *tmp;
 
 	while (head)
