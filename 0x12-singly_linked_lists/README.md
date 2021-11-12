@@ -21,23 +21,20 @@ gcc 4.8.4
 
 *Mandatory*
 
-*lists.h* - header file containing the definition of list_t and the prototypes of all functions.
+[lists.h](https://github.com/Imanolasolo/holbertonschool-low_level_programming/blob/main/0x12-singly_linked_lists/1-list_len.c) - header file containing the definition of list_t and the prototypes of all functions.
 
-*0-print_list.c* - function that prints all the elements of a list_t list.
+[0-print_list.c](https://github.com/Imanolasolo/holbertonschool-low_level_programming/blob/main/0x12-singly_linked_lists/1-list_len.c) - function that prints all the elements of a list_t list.
 
-*1-list_len.c* - function that returns the number of elements in a linked list_t list.
+[1-list_len.c](https://github.com/Imanolasolo/holbertonschool-low_level_programming/blob/main/0x12-singly_linked_lists/1-list_len.c) - function that returns the number of elements in a linked list_t list.
 
-*2-add_node.c* - function that adds a new node at the beginning of a list_t list.
+[2-add_node.c](https://github.com/Imanolasolo/holbertonschool-low_level_programming/blob/main/0x12-singly_linked_lists/2-add_node.c) - function that adds a new node at the beginning of a list_t list.
 
-*3-add_node_end.c* - function that adds a new node at the end of a list_t list.
+[3-add_node_end.c](https://github.com/Imanolasolo/holbertonschool-low_level_programming/blob/main/0x12-singly_linked_lists/3-add_node_end.c) - function that adds a new node at the end of a list_t list.
 
-*4-free_list.c* - function that frees a list_t list.
+[4-free_list.c](https://github.com/Imanolasolo/holbertonschool-low_level_programming/blob/main/0x12-singly_linked_lists/4-free_list.c) - function that frees a list_t list.
 
 **Advanced**
 
 *100-first.c* - function that executes before the main function.
 
 *Linked list diagram*
-
-(https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.alphacodingskills.com%2Fimgfiles%2Flinked-list.PNG&imgrefurl=https%3A%2F%2Fhabr.com%2Fen%2Fpost%2F506660%2F&tbnid=OdY5U6rgitUhsM&vet=12ahUKEwiUqdWFwpP0AhVCwikDHTrSC0IQMygCegUIARC8AQ..i&docid=jZ1FUrMVL2dVvM&w=869&h=247&itg=1&q=linked%20list%20image&ved=2ahUKEwiUqdWFwpP0AhVCwikDHTrSC0IQMygCegUIARC8AQ)
-
