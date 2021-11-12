@@ -37,3 +37,7 @@ gcc 4.8.4
 
 *100-first.c* - function that executes before the main function.
 
+*Linked list diagram*
+
+(https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.alphacodingskills.com%2Fimgfiles%2Flinked-list.PNG&imgrefurl=https%3A%2F%2Fhabr.com%2Fen%2Fpost%2F506660%2F&tbnid=OdY5U6rgitUhsM&vet=12ahUKEwiUqdWFwpP0AhVCwikDHTrSC0IQMygCegUIARC8AQ..i&docid=jZ1FUrMVL2dVvM&w=869&h=247&itg=1&q=linked%20list%20image&ved=2ahUKEwiUqdWFwpP0AhVCwikDHTrSC0IQMygCegUIARC8AQ)
+
