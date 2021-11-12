@@ -4,8 +4,6 @@
 Imanol Asolo
 
 **About**
-![image](https://user-images.githubusercontent.com/86312558/141528077-8ed302dc-26d3-4d50-bc29-9d00688b2317.png)
-
 
 An introductory project on:
 
