@@ -1,8 +1,9 @@
-0x12. C - Singly linked lists
+B.0x12. C - Singly linked lists
 
-Author: Imanol Asolo
+B:Author: 
+Imanol Asolo
 
-About
+B.About
 
 An introductory project on:
 
@@ -10,15 +11,15 @@ How to build and use linked lists
 
 The difference between linked lists and arrays
 
-Requirements
+B.Requirements
 
 Ubuntu 20.04 LTS
 
 gcc 4.8.4
 
-File Descriptions
+B.File Descriptions
 
-Mandatory
+C.Mandatory
 
 lists.h - header file containing the definition of list_t and the prototypes of all functions.
 
