@@ -5,7 +5,7 @@ In this project, I continued learning how to  build and use singly linked lists 
 **Author: Imanol Asolo**
 ## Header File :file_folder:
 
-* [lists.h](./lists.h): Header file containing definitions and prototypes for all types
+* [lists.h]: Header file containing definitions and prototypes for all types
 and functions written for the project.
 
 | Type/File                  |         Definition/Prototype                                                    |
