@@ -15,7 +15,7 @@ and functions written for the project.
 | Type/File                  |         Definition/Prototype                                                     |
 | -------------------------- | -------------------------------------------------------------------------------- |
 | `binary_to_uint`           | `unsigned int binary_to_uint(const char *b);`                                    |
-| `get_bit`                  | `get_bit(unsigned long int n, unsigned int index);                               |
+| `get_bit`                  | `get_bit(unsigned long int n, unsigned int index);`                              |
 | `set_bit`                  | `int set_bit(unsigned long int *n, unsigned int index);`                         |
 | `clear_bit`                | `int clear_bit(unsigned long int *n, unsigned int index);`                       |
 | `flip_bits`                | `unsigned int flip_bits(unsigned long int n, unsigned long int m);`              |
