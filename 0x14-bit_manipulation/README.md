@@ -36,21 +36,21 @@ and functions written for the project.
 * **1. 1**
   * [1-print_binary.c]: Function that prints the binary representation of a number.
 
-   *Format: see example
+   * Format: see example
 
-   *You are not allowed to use arrays
+   * You are not allowed to use arrays
 
-   *You are not allowed to use malloc
+   * You are not allowed to use malloc
 
-   *You are not allowed to use the % or / operators
+   * You are not allowed to use the % or / operators
 
 * **2. 10**
 
   * [2-get_bit.c]: Function that returns the value of a bit at a given index
 
-    * where index is the index, starting from 0 of the bit you want to get
+    * where `index` is the index, starting from 0 of the bit you want to get
 
-    *Returns: the value of the bit at index index or -1 if an error occured
+    * Returns: the value of the bit at index or -1 if an error occured
 
 * **3. 11**
 
