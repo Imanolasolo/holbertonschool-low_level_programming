@@ -1,0 +1,584 @@
+{
+  "rootTopicKey": "ec33f4f1-3605-4680-9bb2-0f1caa8f57be",
+  "editorRootTopicKey": "ec33f4f1-3605-4680-9bb2-0f1caa8f57be",
+  "focusKey": "c1cc4161-5b28-44e6-a585-d4997f5522e9",
+  "extData": {},
+  "topics": [
+    {
+      "key": "ec33f4f1-3605-4680-9bb2-0f1caa8f57be",
+      "parentKey": null,
+      "subKeys": [
+        "ddfeb346-3135-4d44-b22a-d14588996c76",
+        "c1cc4161-5b28-44e6-a585-d4997f5522e9",
+        "1d726fed-2711-4db0-bc3d-7355927ce9ad",
+        "4519797c-445d-4648-88ad-bd46ee61ad3a",
+        "519ce1af-9aa7-4410-93d5-78e9943301f0",
+        "59743c37-5293-4875-ac1c-35e208d05853"
+      ],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "0x14-bit_manipulation"
+        },
+        {
+          "type": "DESC",
+          "data": "Project about how to manipulate bits and use bitwise operators."
+        }
+      ]
+    },
+    {
+      "key": "ddfeb346-3135-4d44-b22a-d14588996c76",
+      "parentKey": "ec33f4f1-3605-4680-9bb2-0f1caa8f57be",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "README.md "
+        },
+        {
+          "type": "DESC",
+          "data": "[https://github.com/Imanolasolo/holbertonschool\\-low\\_level\\_programming/blob/main/0x14\\-bit\\_manipulation/README.md](https://github.com/Imanolasolo/holbertonschool-low_level_programming/blob/main/0x14-bit_manipulation/README.md)"
+        }
+      ]
+    },
+    {
+      "key": "c1cc4161-5b28-44e6-a585-d4997f5522e9",
+      "parentKey": "ec33f4f1-3605-4680-9bb2-0f1caa8f57be",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "1-print_binary.c"
+        },
+        {
+          "type": "DESC",
+          "data": "#include \"main.h\"\n\n\n/\\*\\*\n \\*print\\_binary \\- print a long int as binary number\n \\*@n: integer\n \\*\n \\*/\n\nvoid print\\_binary\\(unsigned long int n\\)\n\\{\nif \\(n \\> 1\\)\nprint\\_binary\\(n \\>\\> 1\\);\n\n\\_putchar\\(\\(n & 1\\) \\+ '0'\\);\n\\}"
+        }
+      ]
+    },
+    {
+      "key": "1d726fed-2711-4db0-bc3d-7355927ce9ad",
+      "parentKey": "ec33f4f1-3605-4680-9bb2-0f1caa8f57be",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "2-get_bit.c"
+        },
+        {
+          "type": "TOPOLOGY",
+          "data": {
+            "nodes": [
+              {
+                "id": "95565f0a",
+                "name": "rectangle",
+                "tags": [],
+                "rect": {
+                  "x": 133,
+                  "y": 62,
+                  "width": 120,
+                  "height": 40,
+                  "center": {
+                    "x": 193,
+                    "y": 82
+                  },
+                  "ex": 253,
+                  "ey": 102
+                },
+                "lineWidth": 1,
+                "rotate": 0,
+                "offsetRotate": 0,
+                "globalAlpha": 1,
+                "dash": 0,
+                "strokeStyle": "#222",
+                "fillStyle": "",
+                "font": {
+                  "color": "#222",
+                  "fontFamily": "\"Hiragino Sans GB\", \"Microsoft YaHei\", \"Helvetica Neue\", Helvetica, Arial",
+                  "fontSize": 12,
+                  "lineHeight": 1.5,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "textAlign": "center",
+                  "textBaseline": "middle",
+                  "background": ""
+                },
+                "animateStart": 0,
+                "animateCycleIndex": 0,
+                "lineDashOffset": 0,
+                "text": "Inicializar librerias",
+                "textOffsetX": 0,
+                "textOffsetY": 0,
+                "animateType": "",
+                "data": "",
+                "zRotate": 0,
+                "anchors": [
+                  {
+                    "x": 133,
+                    "y": 82,
+                    "direction": 4
+                  },
+                  {
+                    "x": 193,
+                    "y": 62,
+                    "direction": 1
+                  },
+                  {
+                    "x": 253,
+                    "y": 82,
+                    "direction": 2
+                  },
+                  {
+                    "x": 193,
+                    "y": 102,
+                    "direction": 3
+                  }
+                ],
+                "rotatedAnchors": [
+                  {
+                    "x": 133,
+                    "y": 82,
+                    "direction": 4
+                  },
+                  {
+                    "x": 193,
+                    "y": 62,
+                    "direction": 1
+                  },
+                  {
+                    "x": 253,
+                    "y": 82,
+                    "direction": 2
+                  },
+                  {
+                    "x": 193,
+                    "y": 102,
+                    "direction": 3
+                  }
+                ],
+                "animateDuration": 0,
+                "animateFrames": [],
+                "borderRadius": 0.5,
+                "iconSize": null,
+                "imageAlign": "center",
+                "gradientAngle": 0,
+                "gradientRadius": 0.01,
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingLeftNum": 0,
+                "paddingRightNum": 0,
+                "paddingTopNum": 0,
+                "paddingBottomNum": 0,
+                "textRect": {
+                  "x": 133,
+                  "y": 92,
+                  "width": 120,
+                  "height": 10,
+                  "center": {
+                    "x": 193,
+                    "y": 97
+                  },
+                  "ex": 253,
+                  "ey": 102
+                },
+                "fullTextRect": {
+                  "x": 133,
+                  "y": 62,
+                  "width": 120,
+                  "height": 40,
+                  "center": {
+                    "x": 193,
+                    "y": 82
+                  },
+                  "ex": 253,
+                  "ey": 102
+                },
+                "iconRect": {
+                  "x": 133,
+                  "y": 62,
+                  "width": 120,
+                  "height": 30,
+                  "center": {
+                    "x": 193,
+                    "y": 77
+                  },
+                  "ex": 253,
+                  "ey": 92
+                },
+                "fullIconRect": {
+                  "x": 133,
+                  "y": 62,
+                  "width": 120,
+                  "height": 40,
+                  "center": {
+                    "x": 193,
+                    "y": 82
+                  },
+                  "ex": 253,
+                  "ey": 102
+                }
+              },
+              {
+                "id": "8a86b316",
+                "name": "rectangle",
+                "tags": [],
+                "rect": {
+                  "x": 140,
+                  "y": 146,
+                  "width": 120,
+                  "height": 40,
+                  "center": {
+                    "x": 200,
+                    "y": 166
+                  },
+                  "ex": 260,
+                  "ey": 186
+                },
+                "lineWidth": 1,
+                "rotate": 0,
+                "offsetRotate": 0,
+                "globalAlpha": 1,
+                "dash": 0,
+                "strokeStyle": "#222",
+                "fillStyle": "",
+                "font": {
+                  "color": "#222",
+                  "fontFamily": "\"Hiragino Sans GB\", \"Microsoft YaHei\", \"Helvetica Neue\", Helvetica, Arial",
+                  "fontSize": 12,
+                  "lineHeight": 1.5,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "textAlign": "center",
+                  "textBaseline": "middle",
+                  "background": ""
+                },
+                "animateStart": 0,
+                "animateCycleIndex": 0,
+                "lineDashOffset": 0,
+                "text": "Declarar variables",
+                "textOffsetX": 0,
+                "textOffsetY": 0,
+                "animateType": "",
+                "data": "",
+                "zRotate": 0,
+                "anchors": [
+                  {
+                    "x": 140,
+                    "y": 166,
+                    "direction": 4
+                  },
+                  {
+                    "x": 200,
+                    "y": 146,
+                    "direction": 1
+                  },
+                  {
+                    "x": 260,
+                    "y": 166,
+                    "direction": 2
+                  },
+                  {
+                    "x": 200,
+                    "y": 186,
+                    "direction": 3
+                  }
+                ],
+                "rotatedAnchors": [
+                  {
+                    "x": 140,
+                    "y": 166,
+                    "direction": 4
+                  },
+                  {
+                    "x": 200,
+                    "y": 146,
+                    "direction": 1
+                  },
+                  {
+                    "x": 260,
+                    "y": 166,
+                    "direction": 2
+                  },
+                  {
+                    "x": 200,
+                    "y": 186,
+                    "direction": 3
+                  }
+                ],
+                "animateDuration": 0,
+                "animateFrames": [],
+                "borderRadius": 0,
+                "iconSize": null,
+                "imageAlign": "center",
+                "gradientAngle": 0,
+                "gradientRadius": 0.01,
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingLeftNum": 0,
+                "paddingRightNum": 0,
+                "paddingTopNum": 0,
+                "paddingBottomNum": 0,
+                "textRect": {
+                  "x": 140,
+                  "y": 176,
+                  "width": 120,
+                  "height": 10,
+                  "center": {
+                    "x": 200,
+                    "y": 181
+                  },
+                  "ex": 260,
+                  "ey": 186
+                },
+                "fullTextRect": {
+                  "x": 140,
+                  "y": 146,
+                  "width": 120,
+                  "height": 40,
+                  "center": {
+                    "x": 200,
+                    "y": 166
+                  },
+                  "ex": 260,
+                  "ey": 186
+                },
+                "iconRect": {
+                  "x": 140,
+                  "y": 146,
+                  "width": 120,
+                  "height": 30,
+                  "center": {
+                    "x": 200,
+                    "y": 161
+                  },
+                  "ex": 260,
+                  "ey": 176
+                },
+                "fullIconRect": {
+                  "x": 140,
+                  "y": 146,
+                  "width": 120,
+                  "height": 40,
+                  "center": {
+                    "x": 200,
+                    "y": 166
+                  },
+                  "ex": 260,
+                  "ey": 186
+                }
+              }
+            ],
+            "lines": [
+              {
+                "id": "fa7b4c6b",
+                "name": "curve",
+                "tags": [],
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 0,
+                  "height": 0,
+                  "center": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "ex": 0,
+                  "ey": 0
+                },
+                "lineWidth": 1,
+                "rotate": 0,
+                "offsetRotate": 0,
+                "globalAlpha": 1,
+                "dash": 0,
+                "strokeStyle": "#222",
+                "fillStyle": "",
+                "font": {
+                  "color": "",
+                  "fontFamily": "\"Hiragino Sans GB\", \"Microsoft YaHei\", \"Helvetica Neue\", Helvetica, Arial",
+                  "fontSize": 12,
+                  "lineHeight": 1.5,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "textAlign": "center",
+                  "textBaseline": "middle",
+                  "background": "#fff"
+                },
+                "animateStart": 0,
+                "animateCycleIndex": 0,
+                "locked": false,
+                "lineDashOffset": 0,
+                "textOffsetX": 0,
+                "textOffsetY": 0,
+                "data": "",
+                "controlPoints": [
+                  {
+                    "x": 193,
+                    "y": 182,
+                    "direction": 3,
+                    "anchorIndex": 3,
+                    "id": 0
+                  },
+                  {
+                    "x": 200,
+                    "y": 66,
+                    "direction": 1,
+                    "anchorIndex": 1,
+                    "id": "8a86b316"
+                  }
+                ],
+                "fromArrowSize": 5,
+                "toArrowSize": 5,
+                "borderWidth": 0,
+                "borderColor": "#000000",
+                "animateColor": "",
+                "animateSpan": 1,
+                "animatePos": 0,
+                "isAnimate": false,
+                "animateFromSize": 0,
+                "animateToSize": 0,
+                "animateDotSize": 3,
+                "from": {
+                  "x": 193,
+                  "y": 102,
+                  "direction": 3,
+                  "anchorIndex": 3,
+                  "id": "95565f0a"
+                },
+                "to": {
+                  "x": 200,
+                  "y": 146,
+                  "direction": 1,
+                  "anchorIndex": 1,
+                  "id": "8a86b316"
+                },
+                "fromArrow": "",
+                "toArrow": "triangleSolid"
+              }
+            ],
+            "lineName": "curve",
+            "fromArrowType": "",
+            "toArrowType": "triangleSolid",
+            "scale": 1,
+            "locked": 0
+          }
+        },
+        {
+          "type": "DESC",
+          "data": "xjw"
+        }
+      ]
+    },
+    {
+      "key": "4519797c-445d-4648-88ad-bd46ee61ad3a",
+      "parentKey": "ec33f4f1-3605-4680-9bb2-0f1caa8f57be",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "3-set_bit.c"
+        }
+      ]
+    },
+    {
+      "key": "519ce1af-9aa7-4410-93d5-78e9943301f0",
+      "parentKey": "ec33f4f1-3605-4680-9bb2-0f1caa8f57be",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "4-clear_bit.c"
+        }
+      ]
+    },
+    {
+      "key": "59743c37-5293-4875-ac1c-35e208d05853",
+      "parentKey": "ec33f4f1-3605-4680-9bb2-0f1caa8f57be",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "5-flip_bits.c"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "readOnly": false,
+    "allowUndo": true,
+    "layoutDir": 2,
+    "theme": {
+      "name": "default",
+      "randomColor": true,
+      "background": "rgb(57,60,65)",
+      "highlightColor": "#50C9CE",
+      "marginH": 60,
+      "marginV": 20,
+      "contentStyle": {
+        "lineHeight": "1.5"
+      },
+      "linkStyle": {
+        "lineRadius": 5,
+        "lineType": "curve",
+        "lineWidth": "3px"
+      },
+      "rootTopic": {
+        "contentStyle": {
+          "fontSize": "34px",
+          "borderRadius": "35px",
+          "padding": "16px 18px 16px 18px"
+        },
+        "subLinkStyle": {
+          "lineType": "curve",
+          "lineWidth": "3px",
+          "lineColor": "rgb(113, 203, 45)"
+        }
+      },
+      "primaryTopic": {
+        "contentStyle": {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderRadius": "20px",
+          "fontSize": "17px",
+          "padding": "10px 15px 10px 15px"
+        },
+        "subLinkStyle": {
+          "lineType": "curve",
+          "lineWidth": "3px",
+          "lineColor": "rgb(113, 203, 45)"
+        }
+      },
+      "normalTopic": {
+        "contentStyle": {
+          "border": "1px solid #e8eaec",
+          "borderRadius": "20px",
+          "fontSize": "17px",
+          "padding": "4px 10px"
+        },
+        "subLinkStyle": {
+          "lineType": "curve",
+          "lineWidth": "3px",
+          "lineColor": "white"
+        }
+      }
+    }
+  },
+  "formatVersion": "0.0"
+}
