@@ -25,7 +25,7 @@ In this project, I learned about to
 ![pngwing com (2)](https://user-images.githubusercontent.com/86312558/142048668-4bec0f80-8112-4f3d-b898-9d8a9ba532b4.png) @jjusturi71 ![pngwing com (3)](https://user-images.githubusercontent.com/86312558/142048993-28de7d8c-df86-4f2f-bb08-f46a1ab35076.png) @jjusturi
 ## Header File :file_folder:
 
-* [main.h]: Header file containing definitions and prototypes for all types
+* [main.h](https://github.com/Imanolasolo/holbertonschool-low_level_programming/blob/main/0x15-file_io/main.h): Header file containing definitions and prototypes for all types
 and functions written for the project.
 
 | Type/File                  |         Definition/Prototype                                                     |
@@ -38,7 +38,7 @@ and functions written for the project.
 ## Files:
 
 * **0. Tread lightly, she is near**
-  * [0-read_textfile.c]: Function that reads a text file and prints it to the POSIX standard output.
+  * [0-read_textfile.c](https://github.com/Imanolasolo/holbertonschool-low_level_programming/blob/main/0x15-file_io/0-read_textfile.c): Function that reads a text file and prints it to the POSIX standard output.
   
     * where letters is the number of letters it should read and print
 
@@ -51,7 +51,7 @@ and functions written for the project.
     * if write fails or does not write the expected amount of bytes, return 0
 
 * **1. Under the snow**
-  * [1-create_file.c]: Create a function that creates a file..
+  * [1-create_file.c](https://github.com/Imanolasolo/holbertonschool-low_level_programming/blob/main/0x15-file_io/1-create_file.c): Create a function that creates a file..
 
      * where filename is the name of the file to create and text_content is a NULL terminated string to write to the file
 
@@ -67,7 +67,7 @@ and functions written for the project.
 
 * **Speak gently, she can hear**
 
-  * [2-append_text_to_file.c]: Function that appends text at the end of a file.
+  * [2-append_text_to_file.c](https://github.com/Imanolasolo/holbertonschool-low_level_programming/blob/main/0x15-file_io/2-append_text_to_file.c): Function that appends text at the end of a file.
 
     * where filename is the name of the file and text_content is the NULL terminated string to add at the end of the file
 
@@ -81,7 +81,7 @@ and functions written for the project.
 
 * **cp**
 
-  * [3-cp.c]:  Write a program that copies the content of a file to another file.
+  * [3-cp.c](https://github.com/Imanolasolo/holbertonschool-low_level_programming/blob/main/0x15-file_io/3-cp.c):  Write a program that copies the content of a file to another file.
 
     * Usage: cp file_from file_to
 
@@ -107,3 +107,4 @@ and functions written for the project.
 
    * You are allowed to use dprintf
 
+You can watch the different pseudocodes used to build the programs here. [Pseudocodes](https://github.com/Imanolasolo/holbertonschool-low_level_programming/tree/main/0x15-file_io/Pseudocodes)
