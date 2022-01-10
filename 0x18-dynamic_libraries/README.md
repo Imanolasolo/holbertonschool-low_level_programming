@@ -1,4 +1,4 @@
-0x18. C - Dynamic libraries
+### 0x18. C - Dynamic libraries ###
 
 <div style="text-align: justify">
 
@@ -48,7 +48,7 @@ Basic usage `nm`, `ldd`, `ldconfig`
 
 ## Installing, compiling and using
 	
-> Only install cloning this repository on your local device:  https://github.com/Imanolasolo/holbertonschool-higher_level_programming.git
+> Only install cloning this repository on your local device:  https://github.com/Imanolasolo/holbertonschool-low_level_programming.git
 	
 > The nm command displays information about symbols in the specified File, which can be an object file, an executable file, or an object-file library. run `nm -D libdynamic.so` to check for libdynamic.so info.
 	
