@@ -57,7 +57,7 @@ This directory contains a collection of files, functions, structs and scripts us
 
 >[6-hash_table_delete.c]() --> function that deletes a hash table. 
 
->[]() --> Rewrite the previous functions using these data structures:
+>[100-sorted_hash_table.c]() --> Rewrite the previous functions using these data structures:
 
 ```
 shash_table_t *shash_table_create(unsigned long int size);
