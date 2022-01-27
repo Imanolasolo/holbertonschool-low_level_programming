@@ -106,7 +106,9 @@ void hash_table_delete(hash_table_t *ht);
 **Read or watch**:
 
 [What is a HashTable Data Structure - Introduction to Hash Tables , Part 0](https://intranet.hbtn.io/rltoken/uodWZz-2jyHReOeToaLNdQ)
+
 [Hash function](https://intranet.hbtn.io/rltoken/YiFi_oMjd9cZ4VepsS2RKQ)
+
 [Hash table](https://intranet.hbtn.io/rltoken/Kswyyb1f2JY3dn-3TEckUQ)
 
 
