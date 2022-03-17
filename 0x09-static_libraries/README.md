@@ -1,15 +1,101 @@
-Title: 0x09-static_libraries
+# 0x09. C - Static libraries
 
-Author: Imanol Asolo
+![Logo](https://www.howtogeek.com/wp-content/uploads/2021/05/laptop-with-terminal-big.png?height=200p&trim=2,2,2,50)
 
-Directory created to show the creation and use of static libraries in C with ar, ranlib, and nm.
+## Concepts
+For this project, students are expected to look at this concept:
 
-Tasks:
+* [C static libraries](https://intranet.hbtn.io/concepts/61) 
 
-0.A library is not a luxury but one of the necessities of life.
+## Resources
+Read or watch :
 
-Create a C static library (libmy.a) with these functions:
+* [What Is A “C” Library? What Is It Good For?](https://intranet.hbtn.io/rltoken/4Dki8HiSS6QBDwsznMbXFA) 
 
+* [Creating A Static “C” Library Using “ar” and “ranlib”](https://intranet.hbtn.io/rltoken/4Dki8HiSS6QBDwsznMbXFA) 
+
+* [Using A “C” Library In A Program](https://intranet.hbtn.io/rltoken/4Dki8HiSS6QBDwsznMbXFA) 
+
+* [What is difference between Dynamic and Static library(Static and Dynamic linking)](https://intranet.hbtn.io/rltoken/wC9HCOvJwa_Co1nZuL4QMA) 
+ (stop at 4:44)
+
+man or help :
+
+*  ` ar ` 
+
+*  ` ranlib ` 
+
+*  ` nm ` 
+
+## Learning Objectives
+
+At the end of this project, you are expected to be able to  [explain to anyone](https://intranet.hbtn.io/rltoken/cZ0J1_hgEsea3mJQHuVjQw) 
+ ,  without the help of Google :
+
+### General
+
+* What is a static library, how does it work, how to create one, and how to use it
+
+* Basic usage of  ` ar ` ,  ` ranlib ` ,  ` nm ` 
+
+## Requirements
+
+### C
+
+* Allowed editors:  ` vi ` ,  ` vim ` ,  ` emacs ` 
+
+* All your files will be compiled on Ubuntu 20.04 LTS using  ` gcc ` , using the options  ` -Wall -Werror -Wextra -pedantic -std=gnu89 ` 
+
+* All your files should end with a new line
+
+* A  ` README.md `  file, at the root of the folder of the project is mandatory
+
+* Your code should use the  ` Betty `  style. It will be checked using [betty-style.pl](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl) 
+ and [betty-doc.pl](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl) 
+
+* You are not allowed to use global variables
+
+* No more than 5 functions per file
+
+* You are not allowed to use the standard library. Any use of functions like  ` printf ` ,  ` puts ` , etc… is forbidden
+
+* You are allowed to use [_putchar](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c) 
+
+* You don’t have to push  ` _putchar.c ` , we will use our file. If you do it won’t be taken into account
+
+* In the following examples, the  ` main.c `  files are shown as examples. You can use them to test your 
+functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own  ` main.c `  files at compilation. Our  ` main.c `  files might be different from the one shown in the examples
+
+* The prototypes of all your functions and the prototype of the function  ` _putchar `  should be included in your header file called  ` main.h `
+
+* Don’t forget to push your header file
+
+### Bash
+
+* Allowed editors:  ` vi ` ,  ` vim ` ,  ` emacs ` 
+
+* All your scripts will be tested on Ubuntu 20.04 LTS
+
+* All your files should end with a new line ([why?](http://unix.stackexchange.com/questions/18743/whats-the-point-in-adding-a-new-line-to-the-end-of-a-file/18789) 
+)
+
+* The first line of all your files should be exactly  ` #!/bin/bash ` 
+
+* A  ` README.md `  file, at the root of the folder of the project, describing what each script is doing
+
+* All your files must be executable
+
+## More Info
+
+You do not need to learn about dynamic libraries, yet.
+
+## Tasks
+
+### 0. A library is not a luxury but one of the necessities of life
+
+Create the static library   ` libmy.a `   containing all the functions listed below:
+
+```bash
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
@@ -31,12 +117,203 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 
-Include a header function containing the prototypes of all functions in libmy .a called main.h
+```
 
-1. Without libraries what have we? We have no past and no future
+If you haven’t coded all of the above functions create empty ones with the right prototype. Don’t forget to push your   ` main.h `   file to your repository. It should at least contain all the prototypes of the above functions.
 
-create_static_lib.sh: Bash script that creates a static library called liball.a from all the .c files in the current directory.
+```bash
+julien@ubuntu:~/0x09. Static Librairies$ ar -t libmy.a 
+0-isupper.o
+0-memset.o
+0-strcat.o
+1-isdigit.o
+1-memcpy.o
+1-strncat.o
+100-atoi.o
+2-strchr.o
+2-strlen.o
+2-strncpy.o
+3-islower.o
+3-puts.o
+3-strcmp.o
+3-strspn.o
+4-isalpha.o
+4-strpbrk.o
+5-strstr.o
+6-abs.o
+9-strcpy.o
+_putchar.o
+julien@ubuntu:~/0x09. Static Librairies$ nm libmy.a 
+
+0-isupper.o:
+0000000000000000 T _isupper
+
+0-memset.o:
+0000000000000000 T _memset
+
+0-strcat.o:
+0000000000000000 T _strcat
+
+1-isdigit.o:
+0000000000000000 T _isdigit
+
+1-memcpy.o:
+0000000000000000 T _memcpy
+
+1-strncat.o:
+0000000000000000 T _strncat
+
+100-atoi.o:
+0000000000000000 T _atoi
+
+2-strchr.o:
+0000000000000000 T _strchr
+
+2-strlen.o:
+0000000000000000 T _strlen
+
+2-strncpy.o:
+0000000000000000 T _strncpy
+
+3-islower.o:
+0000000000000000 T _islower
+
+3-puts.o:
+                 U _putchar
+0000000000000000 T _puts
+
+3-strcmp.o:
+0000000000000000 T _strcmp
+
+3-strspn.o:
+0000000000000000 T _strspn
+
+4-isalpha.o:
+0000000000000000 T _isalpha
+
+4-strpbrk.o:
+0000000000000000 T _strpbrk
+
+5-strstr.o:
+0000000000000000 T _strstr
+
+6-abs.o:
+0000000000000000 T _abs
+
+9-strcpy.o:
+0000000000000000 T _strcpy
+
+_putchar.o:
+0000000000000000 T _putchar
+                 U write
+julien@ubuntu:~/0x09. Static Librairies$ cat main.c 
+#include "main.h"
+
+int main(void)
+{
+    _puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
+    return (0);
+}
+julien@ubuntu:~/0x09. Static Librairies$ gcc -std=gnu89 main.c -L. -lmy -o quote
+julien@ubuntu:~/0x09. Static Librairies$ ./quote 
+"At the end of the day, my goal was to be the best hacker"
+    - Kevin Mitnick
+julien@ubuntu:~/0x09. Static Librairies$ 
+
+```
+
+Github information Repo:
+
+* GitHub repository:  ` holbertonschool-low_level_programming ` 
+
+* Directory:  ` 0x09-static_libraries ` 
+
+* Files:  
+
+[libmy.a](https://github.com/Imanolasolo/holbertonschool-low_level_programming/blob/main/0x09-static_libraries/libmy.a)
+
+[main.h](https://github.com/Imanolasolo/holbertonschool-low_level_programming/blob/main/0x09-static_libraries/main.h) 
+
+### 1. Without libraries what have we? We have no past and no future
+
+Create a script called   ` create_static_lib.sh `   that creates a static library called   ` liball.a `   from all the   ` .c `   files that are in the current directory.
+
+```bash
+julien@ubuntu:~/0x09. Static Librairies$ ls *.c
+0-isupper.c  0-strcat.c  1-isdigit.c  1-strncat.c  2-strlen.c   3-islower.c  3-strcmp.c  4-isalpha.c  5-strstr.c  9-strcpy.c  _putchar.c
+0-memset.c   100-atoi.c  1-memcpy.c   2-strchr.c   2-strncpy.c  3-puts.c     3-strspn.c  4-strpbrk.c  6-abs.c
+julien@ubuntu:~/0x09. Static Librairies$ ./create_static_lib.sh 
+julien@ubuntu:~/0x09. Static Librairies$ ls *.a
+liball.a
+julien@ubuntu:~/0x09. Static Librairies$ ar -t liball.a
+0-isupper.o
+0-memset.o
+0-strcat.o
+100-atoi.o
+1-isdigit.o
+1-memcpy.o
+1-strncat.o
+2-strchr.o
+2-strlen.o
+2-strncpy.o
+3-islower.o
+3-puts.o
+3-strcmp.o
+3-strspn.o
+4-isalpha.o
+4-strpbrk.o
+5-strstr.o
+6-abs.o
+9-strcpy.o
+_putchar.o
+julien@ubuntu:~/0x09. Static Librairies$ 
+
+```
+
+ Github information Repo:
+
+* GitHub repository:  ` holbertonschool-low_level_programming ` 
+
+* Directory:  ` 0x09-static_libraries `
+
+* File:  
+[create_static_lib.sh](https://github.com/Imanolasolo/holbertonschool-low_level_programming/blob/main/0x09-static_libraries/create-static-lib.sh) 
+
+### 2. Either write something worth reading or do something worth writing
+
+Write a blog post on C static libraries. It should cover:
+
+* Why use libraries
+
+* How they work
+
+* How to create them
+
+* How to use them
+
+Your posts should have examples and at least one picture, at the top. Publish your blog post on Medium or LinkedIn, and share it at least on LinkedIn.
+
+When done, please add all urls below (blog post, LinkedIn post, etc.)
+
+Please, remember that these blogs must be written in English to further your technical ability in a variety of settings
+
+ [Post URL](https://www.linkedin.com/posts/imanol-asolo-5ba9b42a_c-static-libraries-activity-6857427089293934592-Yw6V)
+
+## Credits
+
+## Author(s):blue_book:
+
+Work is owned and maintained by:
+* Imanol Asolo <[3848](mailto:3848@holbertonschool.com)> [![M](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/25px-Octicons-mark-github.svg.png)](https://github.com/Imanolasolo) [![M](https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/25px-Twitter_Bird.svg.png)](https://twitter.com/jjusturi) [![M](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/25px-LinkedIn_logo_initials.png)](https://www.linkedin.com/in/imanol-asolo-5ba9b42a/)
 
 
+## Acknowledgments :mega: 
 
-
+### **`Holberton School`** (*providing guidance*)
+This program was written as part of the curriculum for Holberton School.
+Holberton School is a campus-based full-stack software engineering program
+that prepares students for careers in the tech industry using project-based
+peer learning. For more information, visit [this link](https://www.holbertonschool.com/).
+<p align="center">
+	<img src="https://assets.website-files.com/6105315644a26f77912a1ada/610540e8b4cd6969794fe673_Holberton_School_logo-04-04.svg" alt="This is a secret;)">
+</p>
