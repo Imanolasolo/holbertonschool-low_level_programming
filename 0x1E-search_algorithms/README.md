@@ -123,6 +123,7 @@ Write a function that searches for a value in a sorted array of integers using t
 *   If `value` is not present in `array` or if `array` is `NULL`, your function must return `-1`
 *   You must print the array being searched every time it changes. (e.g. at the beginning and when you search a subarray) (See example)
 
+    ```
     wilfried@0x1E-search_algorithms$ cat 1-main.c 
     #include <stdio.h>
     #include <stdlib.h>
@@ -162,7 +163,7 @@ Write a function that searches for a value in a sorted array of integers using t
     Searching in array: 8, 9
     Searching in array: 9
     Found 999 at index: -1
-    
+    ```
 
 **Repo:**
 
@@ -247,7 +248,7 @@ Write a function that searches for a value in a sorted array of integers using t
 *   You have to use the square root of the size of the array as the jump step.
 *   You can use the `sqrt()` function included in `<math.h>` (don’t forget to compile with -lm)
 *   Every time you compare a value in the array to the value you are searching for, you have to print this value (see example)
-
+```
     wilfried@0x1E-search_algorithms$ cat 100-main.c 
     #include <stdio.h>
     #include <stdlib.h>
@@ -294,7 +295,7 @@ Write a function that searches for a value in a sorted array of integers using t
     Value found between indexes [9] and [12]
     Value checked array[9] = [9]
     Found 999 at index: -1
-    
+```    
     
 
 **Repo:**
@@ -326,7 +327,7 @@ Write a function that searches for a value in a sorted array of integers using t
 *   If `value` is not present in `array` or if `array` is `NULL`, your function must return `-1`
 *   To determine the probe position, you can use : `size_t pos = low + (((double)(high - low) / (array[high] - array[low])) * (value - array[low]))`
 *   Every time you compare a value in the array to the value you are searching, you have to print this value (see example below)
-
+```
     wilfried@0x1E-search_algorithms$ cat 102-main.c 
     #include <stdio.h>
     #include <stdlib.h>
@@ -360,7 +361,7 @@ Write a function that searches for a value in a sorted array of integers using t
     
     Value checked array[2109] is out of range
     Found 999 at index: -1
-    
+```    
 
 **Repo:**
 
@@ -383,7 +384,7 @@ Write a function that searches for a value in a sorted array of integers using t
 *   Every time you compare a value in the array to the value you are searching for, you have to print this value (See example)
 *   Once you’ve found the good range, you need to use a binary search:
     *   Every time you split the array, you have to print the new array (or subarray) you’re searching in (See example)
-
+```
     wilfried@0x1E-search_algorithms$ cat 103-main.c 
     #include <stdio.h>
     #include <stdlib.h>
@@ -433,7 +434,7 @@ Write a function that searches for a value in a sorted array of integers using t
     Searching in array: 76, 99
     Searching in array: 99
     Found 999 at index: -1
-    
+```    
 
 **Repo:**
 
@@ -456,7 +457,7 @@ Write a function that searches for a value in a sorted array of integers.
 *   If `value` is not present in `array` or if `array` is `NULL`, your function must return `-1`
 *   Every time you split the array, you have to print the new array (or subarray) you’re searching in (See example)
 *   You have to use recursion. You may only use one loop (`while`, `for`, `do while`, etc.) in order to print the array
-
+```
     wilfried@0x1E-search_algorithms$ cat 104-main.c 
     #include <stdio.h>
     #include <stdlib.h>
@@ -496,7 +497,7 @@ Write a function that searches for a value in a sorted array of integers.
     Searching in array: 8, 9
     Searching in array: 9
     Found 999 at index: -1
-    
+```    
 
 **Repo:**
 
@@ -509,7 +510,7 @@ Write a function that searches for a value in a sorted array of integers.
 You might think that linear search is not as effective as any other algorithm, right? Well, we should see what happens with a singly linked list.
 
 Please define the following data structure in your `search_algos.h` header file:
-
+```
     /**
      * struct listint_s - singly linked list
      *
@@ -525,7 +526,7 @@ Please define the following data structure in your `search_algos.h` header file:
         size_t index;
         struct listint_s *next;
     } listint_t;
-    
+```    
 
 Write a function that searches for a value in a sorted list of integers using the Jump search algorithm.
 
@@ -541,7 +542,7 @@ Write a function that searches for a value in a sorted list of integers using th
 *   Every time you compare a value in the list to the value you are searching, you have to print this value (see example)
 
 NOTE: [You can find here](https://intranet.hbtn.io/rltoken/YSeKQag_C03TTV11mhGqpg "You can find here") the functions used in the example. You don’t need to push them, we will compile your file with our own implementation during the correction.
-
+```
     wilfried@0x1E-search_algorithms$ cat 105-main.c 
     #include <stdio.h>
     #include <stdlib.h>
@@ -624,7 +625,7 @@ NOTE: [You can find here](https://intranet.hbtn.io/rltoken/YSeKQag_C03TTV11mhGqp
     Value checked at index [14] = [76]
     Value checked at index [15] = [99]
     Found 999 at index: (nil)
-    
+```    
 
 **Repo:**
 
@@ -637,7 +638,7 @@ NOTE: [You can find here](https://intranet.hbtn.io/rltoken/YSeKQag_C03TTV11mhGqp
 As you see now, looking for a specific value in a singly linked list always leads to browse every element of the list. A common way to optimize the time complexity of a search in a singly linked list is to modify the list itself by adding an “express lane” to browse it. A linked list with an express lane is called a [skip list](https://intranet.hbtn.io/rltoken/kPRt_1l8Gep1UBS2iGaNnw "skip list"). This change does not come without consequences. Indeed, the space complexity of a search in this kind of list will grow as `sizeof(skiplist_t) > sizeof(listint_t)` (see example below).
 
 Please define the following data structure in your `search_algos.h` header file:
-
+```
     /**
      * struct skiplist_s - Singly linked list with an express lane
      *
@@ -655,7 +656,7 @@ Please define the following data structure in your `search_algos.h` header file:
         struct skiplist_s *next;
         struct skiplist_s *express;
     } skiplist_t;
-    
+```    
 
 Write a function that searches for a value in a sorted skip list of integers.
 
@@ -669,7 +670,7 @@ Write a function that searches for a value in a sorted skip list of integers.
 *   Every time you compare a value in the list to the value you are searching, you have to print this value (see example below)
 
 NOTE: [You can find here](https://intranet.hbtn.io/rltoken/krQHolwjLTPKTOl_pHo5Rw "You can find here") the functions used in the example. You don’t need to push them, we will compile your file with our own implementation during the correction.
-
+```
     wilfried@0x1E-search_algorithms$ cat 106-main.c 
     #include <stdio.h>
     #include <stdlib.h>
@@ -757,7 +758,7 @@ NOTE: [You can find here](https://intranet.hbtn.io/rltoken/krQHolwjLTPKTOl_pHo5R
     Value checked at index [14] = [76]
     Value checked at index [15] = [99]
     Found 999 at index: (nil)
-    
+````    
 
 **Repo:**
 
