@@ -55,6 +55,7 @@ Write a function that searches for a value in an array of integers using the [Li
 *   If `value` is not present in `array` or if `array` is `NULL`, your function must return `-1`
 *   Every time you compare a value in the array to the value you are searching, you have to print this value (see example below)
 
+```
     wilfried@0x1E-search_algorithms$ cat 0-main.c 
     #include <stdio.h>
     #include <stdlib.h>
@@ -101,7 +102,7 @@ Write a function that searches for a value in an array of integers using the [Li
     Value checked array[8] = [-1]
     Value checked array[9] = [9]
     Found 999 at index: -1
-    
+```    
 
 **Repo:**
 
